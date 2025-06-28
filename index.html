@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Junior Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#a395eabd] to-[#624ad9] text-white min-h-screen font-sans"
+  >
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center  bg-violet-400 px-8 py-4 bg-transparent shadow-blue fixed w-full top-0 z-50 rounded-b-xl"
+    >
+      <h1 class="text-2xl font-extrabold text-white tracking-wide">Username</h1>
+
+      <ul class="hidden md:flex gap-8 text-white font-medium">
+        <li>
+          <a href="#home" class="hover:text-pink-600 transition duration-200"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#skills" class="hover:text-pink-600 transition duration-200"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="hover:text-pink-600 transition duration-200"
+            >Projects</a
+          >
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-white hover:text-pink-600 transition text-xl"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="#" class="text-white hover:text-pink-600 transition text-xl"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <button
+          class=" bg-violet-500 px-4 py-1 rounded-xl hover:bg-white hover:text-pink-600 transition duration-300 font-semibold"
+        >
+          Let’s Connect
+        </button>
+      </div>
+    </nav>
+
+    <!-- Home  -->
+    <section
+      id="home"
+      class="flex flex-col-reverse md:flex-row items-center justify-between pt-32 px-8 md:px-20"
+    >
+      <div class="md:w-1/2">
+        <p class="text-gray-300 mb-2">Welcome to My Portfolio</p>
+        <h2 class="text-4xl font-extrabold mb-4">
+          Hi! I am a <span class="text-pink-600">Junior Developer</span>
+        </h2>
+        <p class="text-gray-300 mb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam
+          consequatur ab sapiente vitae. Ex necessitatibus iste inventore cumque
+          officia.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center text-white hover:underline"
+        >
+          Let’s connect
+          <span class="ml-2">⟶</span>
+        </a>
+      </div>
+
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <img
+          src="https://www.sphinx-solution.com/assets/img/mobileApp-overviewsvg.svg"
+          alt="Developer illustration"
+          class="w-full max-w-md mx-auto"
+        />
+      </div>
+    </section>
+  </body>
+</html>
