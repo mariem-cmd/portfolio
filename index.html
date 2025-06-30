@@ -6,13 +6,17 @@
     <title>Portfolio - Junior Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body
     class="bg-gradient-to-br from-[#a395eabd] to-[#624ad9] text-white min-h-screen font-sans"
   >
     <!-- Navbar -->
     <nav
-      class="flex justify-between items-center  bg-violet-400 px-8 py-4 bg-transparent shadow-blue fixed w-full top-0 z-50 rounded-b-xl"
+      class="flex justify-between items-center bg-stone-950 px-8 py-4  shadow-blue fixed w-full top-0 z-50 rounded-b-xl"
     >
       <h1 class="text-2xl font-extrabold text-white tracking-wide">Username</h1>
 
@@ -37,14 +41,35 @@
       </ul>
 
       <div class="flex items-center gap-4">
-        <a href="#" class="text-white hover:text-pink-600 transition text-xl"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a href="#" class="text-white hover:text-pink-600 transition text-xl"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-white hover:text-pink-600 transition text-xl"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-white hover:text-pink-600 transition text-xl"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-white hover:text-pink-600 transition text-xl"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+
         <button
-          class=" bg-violet-500 px-4 py-1 rounded-xl hover:bg-white hover:text-pink-600 transition duration-300 font-semibold"
+          class=" hover:bg-violet-500 hover:text-white px-4 py-1 rounded-xl bg-white  text-pink-600 transition duration-300 font-semibold"
         >
           Let’s Connect
         </button>
@@ -83,5 +108,249 @@
         />
       </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-40 px-6 md:px-20 mb-50">
+      <div
+        class="max-w-4xl mx-auto bg-[#2c2a55]/80 p-10 rounded-3xl shadow-lg text-center text-white"
+      >
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <p class="text-sm text-gray-300 mb-10">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+          beatae, eos iste incidunt repellat iure ducimus quam veniam odio quasi
+          adipisci libero ea reprehenderit aspernatur fugit modi suscipit?
+          Suscipit, mollitia.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">80%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">70%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">60%</span>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">75%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 65%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">65%</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                class="w-8"
+              />
+              <div class="w-full">
+                <div class="h-3 bg-gray-300 rounded-full">
+                  <div
+                    class="h-full bg-green-500 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <span class="text-sm w-12 text-right">85%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-6 md:px-10 -mt-40  rounded-3xl max-w-6xl mx-auto my-10  ">
+  <h2 class="text-4xl font-extrabold text-white text-center mb-12">Projects</h2>
+  <div class="flex flex-col md:flex-row justify-center gap-8">
+    <!-- Card 1 -->
+    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
+      <div class="bg-gray-300 rounded-full p-4 mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 1" class="w-16 h-16 object-contain" />
+      </div>
+      <h3 class="font-semibold text-white text-lg mb-2">Title1</h3>
+      <p class="text-gray-300 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
+      <div class="bg-gray-300 rounded-full p-4 mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 2" class="w-16 h-16 object-contain" />
+      </div>
+      <h3 class="font-semibold text-white text-lg mb-2">Title2</h3>
+      <p class="text-gray-300 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
+      <div class="bg-gray-300 rounded-full p-4 mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 3" class="w-16 h-16 object-contain" />
+      </div>
+      <h3 class="font-semibold text-white text-lg mb-2">Title3</h3>
+      <p class="text-gray-300 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer Pro -->
+    <footer class="bg-stone-950 text-white py-12 mt-20">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12"
+      >
+        <!-- Logo & Description -->
+        <div>
+          <h2 class="text-2xl font-bold mb-3">Username</h2>
+          <p class="text-gray-400 text-sm">
+            Junior Developer passionate about web technologies and application
+            development. Always learning and building meaningful digital
+            experiences.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300 text-sm">
+            <li>
+              <a href="#home" class="hover:text-pink-500 transition">Home</a>
+            </li>
+            <li>
+              <a href="#skills" class="hover:text-pink-500 transition"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-pink-500 transition"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-pink-500 transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            youremail@example.com<br />
+            +216 00 000 000
+          </p>
+          <div class="flex gap-4 text-xl">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              class="hover:text-pink-500 transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="hover:text-pink-500 transition"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="hover:text-pink-500 transition"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="mailto:youremail@example.com"
+              class="hover:text-pink-500 transition"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom line -->
+      <div
+        class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400"
+      >
+        © 2025 Username. All rights reserved.
+      </div>
+    </footer>
+
+    
   </body>
 </html>
