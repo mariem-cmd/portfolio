@@ -5,101 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Junior Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body
-    class="bg-gradient-to-br from-[#a395eabd] to-[#624ad9] text-white min-h-screen font-sans"
-  >
-    <!-- Navbar -->
-    <nav
-      class="flex justify-between items-center bg-stone-950 px-8 py-4  shadow-blue fixed w-full top-0 z-50 rounded-b-xl"
-    >
-      <h1 class="text-2xl font-extrabold text-white tracking-wide">Username</h1>
 
-      <ul class="hidden md:flex gap-8 text-white font-medium">
+  <body
+    class="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen font-sans transition-colors duration-500"
+  >
+    <!-- NAVBAR -->
+    <nav
+      class="flex justify-between items-center bg-white dark:bg-stone-950 px-8 py-4 shadow fixed w-full top-0 z-50 rounded-b-xl"
+    >
+      <h1 class="text-2xl font-extrabold tracking-wide">Username</h1>
+
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#home" class="hover:text-pink-600 transition">Home</a></li>
         <li>
-          <a href="#home" class="hover:text-pink-600 transition duration-200"
-            >Home</a
-          >
+          <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
         </li>
         <li>
-          <a href="#skills" class="hover:text-pink-600 transition duration-200"
-            >Skills</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="hover:text-pink-600 transition duration-200"
+          <a href="#projects" class="hover:text-pink-600 transition"
             >Projects</a
           >
         </li>
       </ul>
 
       <div class="flex items-center gap-4">
-        <!-- LinkedIn -->
         <a
           href="https://www.linkedin.com"
           target="_blank"
-          class="text-white hover:text-pink-600 transition text-xl"
+          class="hover:text-pink-600 transition text-xl"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
-
-        <!-- Facebook -->
         <a
           href="https://www.facebook.com"
           target="_blank"
-          class="text-white hover:text-pink-600 transition text-xl"
+          class="hover:text-pink-600 transition text-xl"
         >
           <i class="fab fa-facebook-f"></i>
         </a>
-
-        <!-- Instagram -->
         <a
           href="https://www.instagram.com"
           target="_blank"
-          class="text-white hover:text-pink-600 transition text-xl"
+          class="hover:text-pink-600 transition text-xl"
         >
           <i class="fab fa-instagram"></i>
         </a>
-
         <button
-          class=" hover:bg-violet-500 hover:text-white px-4 py-1 rounded-xl bg-white  text-pink-600 transition duration-300 font-semibold"
+          class="hover:bg-violet-500 hover:text-white px-4 py-1 rounded-xl bg-white text-pink-600 font-semibold transition"
         >
           Let’s Connect
+        </button>
+        <button
+          id="theme-toggle"
+          class="hover:text-yellow-400 transition text-xl"
+        >
+          <i id="theme-icon" class="fas fa-moon"></i>
         </button>
       </div>
     </nav>
 
-    <!-- Home  -->
+    <!-- HOME -->
     <section
       id="home"
       class="flex flex-col-reverse md:flex-row items-center justify-between pt-32 px-8 md:px-20"
     >
       <div class="md:w-1/2">
-        <p class="text-gray-300 mb-2">Welcome to My Portfolio</p>
+        <p class="text-gray-500 dark:text-gray-300 mb-2">
+          Welcome to My Portfolio
+        </p>
         <h2 class="text-4xl font-extrabold mb-4">
           Hi! I am a <span class="text-pink-600">Junior Developer</span>
         </h2>
-        <p class="text-gray-300 mb-6">
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam
-          consequatur ab sapiente vitae. Ex necessitatibus iste inventore cumque
-          officia.
+          consequatur ab sapiente vitae.
         </p>
-        <a
-          href="#contact"
-          class="inline-flex items-center text-white hover:underline"
-        >
-          Let’s connect
-          <span class="ml-2">⟶</span>
+        <a href="#contact" class="inline-flex items-center hover:underline">
+          Let’s connect <span class="ml-2">⟶</span>
         </a>
       </div>
-
       <div class="md:w-1/2 mb-10 md:mb-0">
         <img
           src="https://www.sphinx-solution.com/assets/img/mobileApp-overviewsvg.svg"
@@ -109,241 +102,307 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-40 px-6 md:px-20 mb-50">
-      <div
-        class="max-w-4xl mx-auto bg-[#2c2a55]/80 p-10 rounded-3xl shadow-lg text-center text-white"
-      >
-        <h2 class="text-3xl font-bold mb-4">Skills</h2>
-        <p class="text-sm text-gray-300 mb-10">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-          beatae, eos iste incidunt repellat iure ducimus quam veniam odio quasi
-          adipisci libero ea reprehenderit aspernatur fugit modi suscipit?
-          Suscipit, mollitia.
+    <!-- skills -->
+    <section
+      id="skills"
+      class="py-24 px-6 md:px-20 dark:bg-gray-900 transition-colors duration-300"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          My Skills
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-12">
+          Voici les technologies que je maîtrise avec leur niveau de compétence
+          :
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="space-y-6">
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">80%</span>
-            </div>
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 70%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">70%</span>
-            </div>
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 60%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">60%</span>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <!-- Skill Card Template -->
+          <!-- HTML -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="HTML5"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              HTML5
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">80%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-emerald-400 rounded-full"
+                style="width: 80%"
+              ></div>
             </div>
           </div>
 
-          <div class="space-y-6">
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 75%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">75%</span>
+          <!-- CSS -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="CSS3"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              CSS3
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">75%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-emerald-400 rounded-full"
+                style="width: 75%"
+              ></div>
             </div>
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 65%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">65%</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="JavaScript"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              JavaScript
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">70%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-yellow-400 rounded-full"
+                style="width: 70%"
+              ></div>
             </div>
-            <div class="flex items-center gap-4">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                class="w-8"
-              />
-              <div class="w-full">
-                <div class="h-3 bg-gray-300 rounded-full">
-                  <div
-                    class="h-full bg-green-500 rounded-full"
-                    style="width: 85%"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm w-12 text-right">85%</span>
+          </div>
+
+          <!-- Python -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="Python"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              Python
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">85%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-green-500 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="Java"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              Java
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">70%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-yellow-400 rounded-full"
+                style="width: 70%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- PHP -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="PHP"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              PHP
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">60%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-orange-400 rounded-full"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="MySQL"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              MySQL
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">65%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-yellow-400 rounded-full"
+                style="width: 65%"
+              ></div>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div
+            class="bg-white dark:bg-[#1e1c3b] p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="w-12 h-12 mb-4"
+              alt="GitHub"
+            />
+            <h3 class="text-sm font-semibold text-gray-800 dark:text-white">
+              GitHub
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">90%</p>
+            <div class="w-full h-2 bg-gray-300 rounded-full mt-2">
+              <div
+                class="h-full bg-green-500 rounded-full"
+                style="width: 90%"
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section
+      id="projects"
+      class="py-24 px-6 md:px-20 transition-colors duration-300"
+    >
+      <h2
+        class="text-4xl font-extrabold text-center text-gray-800 dark:text-white mb-12"
+      >
+        Projects
+      </h2>
 
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto"
+      >
+        <!-- Project Card -->
+        <div
+          class="bg-white dark:bg-[#2c2a55] rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+            alt="Project 1"
+            class="w-16 h-16 mx-auto mb-4"
+          />
+          <h3
+            class="text-xl font-semibold text-center text-gray-800 dark:text-white mb-2"
+          >
+            Project Title 1
+          </h3>
+          <p class="text-sm text-center text-gray-600 dark:text-gray-300">
+            Une brève description de votre projet. Ce projet traite de ...
+          </p>
+        </div>
 
-<!-- Projects Section -->
-<section id="projects" class="py-20 px-6 md:px-10 -mt-40  rounded-3xl max-w-6xl mx-auto my-10  ">
-  <h2 class="text-4xl font-extrabold text-white text-center mb-12">Projects</h2>
-  <div class="flex flex-col md:flex-row justify-center gap-8">
-    <!-- Card 1 -->
-    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
-      <div class="bg-gray-300 rounded-full p-4 mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 1" class="w-16 h-16 object-contain" />
+        <div
+          class="bg-white dark:bg-[#2c2a55] rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+            alt="Project 2"
+            class="w-16 h-16 mx-auto mb-4"
+          />
+          <h3
+            class="text-xl font-semibold text-center text-gray-800 dark:text-white mb-2"
+          >
+            Project Title 2
+          </h3>
+          <p class="text-sm text-center text-gray-600 dark:text-gray-300">
+            Une brève description de votre projet. Ce projet utilise ...
+          </p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-[#2c2a55] rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+            alt="Project 3"
+            class="w-16 h-16 mx-auto mb-4"
+          />
+          <h3
+            class="text-xl font-semibold text-center text-gray-800 dark:text-white mb-2"
+          >
+            Project Title 3
+          </h3>
+          <p class="text-sm text-center text-gray-600 dark:text-gray-300">
+            Description courte pour attirer l’attention sur le projet.
+          </p>
+        </div>
       </div>
-      <h3 class="font-semibold text-white text-lg mb-2">Title1</h3>
-      <p class="text-gray-300 text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
-      </p>
-    </div>
+    </section>
 
-    <!-- Card 2 -->
-    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
-      <div class="bg-gray-300 rounded-full p-4 mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 2" class="w-16 h-16 object-contain" />
-      </div>
-      <h3 class="font-semibold text-white text-lg mb-2">Title2</h3>
-      <p class="text-gray-300 text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-[#2c2a55]/80 border border-white/20 rounded-xl p-6 flex flex-col items-center text-center max-w-xs hover:scale-105 transition-transform duration-300 shadow-lg">
-      <div class="bg-gray-300 rounded-full p-4 mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Project 3" class="w-16 h-16 object-contain" />
-      </div>
-      <h3 class="font-semibold text-white text-lg mb-2">Title3</h3>
-      <p class="text-gray-300 text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rerum tempora delectus, pariatur ipsum, neque dolore...
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Footer Pro -->
+    <!-- FOOTER -->
     <footer class="bg-stone-950 text-white py-12 mt-20">
       <div
         class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12"
       >
-        <!-- Logo & Description -->
         <div>
           <h2 class="text-2xl font-bold mb-3">Username</h2>
           <p class="text-gray-400 text-sm">
-            Junior Developer passionate about web technologies and application
-            development. Always learning and building meaningful digital
-            experiences.
+            Junior Developer passionate about web technologies and applications.
           </p>
         </div>
-
-        <!-- Quick Links -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2 text-gray-300 text-sm">
+            <li><a href="#home" class="hover:text-pink-500">Home</a></li>
+            <li><a href="#skills" class="hover:text-pink-500">Skills</a></li>
             <li>
-              <a href="#home" class="hover:text-pink-500 transition">Home</a>
+              <a href="#projects" class="hover:text-pink-500">Projects</a>
             </li>
-            <li>
-              <a href="#skills" class="hover:text-pink-500 transition"
-                >Skills</a
-              >
-            </li>
-            <li>
-              <a href="#projects" class="hover:text-pink-500 transition"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="hover:text-pink-500 transition"
-                >Contact</a
-              >
-            </li>
+            <li><a href="#contact" class="hover:text-pink-500">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Contact & Social -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
           <p class="text-gray-300 text-sm mb-4">
-            youremail@example.com<br />
-            +216 00 000 000
+            youremail@example.com<br />+216 00 000 000
           </p>
           <div class="flex gap-4 text-xl">
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              class="hover:text-pink-500 transition"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              class="hover:text-pink-500 transition"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              class="hover:text-pink-500 transition"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="mailto:youremail@example.com"
-              class="hover:text-pink-500 transition"
-            >
-              <i class="fas fa-envelope"></i>
-            </a>
+            <a href="https://www.linkedin.com" class="hover:text-pink-500"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.facebook.com" class="hover:text-pink-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com" class="hover:text-pink-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:youremail@example.com" class="hover:text-pink-500"
+              ><i class="fas fa-envelope"></i
+            ></a>
           </div>
         </div>
       </div>
-
-      <!-- Bottom line -->
       <div
         class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400"
       >
@@ -351,6 +410,25 @@
       </div>
     </footer>
 
-    
+    <!-- JS Dark Mode -->
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-icon");
+      const html = document.documentElement;
+
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      }
+
+      toggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        icon.classList.toggle("fa-moon", !isDark);
+        icon.classList.toggle("fa-sun", isDark);
+      });
+    </script>
   </body>
 </html>
